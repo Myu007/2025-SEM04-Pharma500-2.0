@@ -1394,6 +1394,44 @@
                 font-size: 10px;
             }
         }
+        .custom-footer {
+  background-color: #f9fafb;
+  padding: 24px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #444;
+  border-top: 1px solid #e0e0e0;
+}
+
+.custom-footer .dev-credit {
+  font-weight: 600;
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.custom-footer .disclaimer {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #555;
+}
+
+.custom-footer .telegram a {
+  color: #0088cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.custom-footer .telegram a:hover {
+  text-decoration: underline;
+}
+.custom-footer {
+  box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px 8px 0 0;
+}
     </style>
 </head>
 <body>
@@ -1544,16 +1582,18 @@
             <button class="nav-btn" onclick="hideResultOverlay()">Continue</button>
         </div>
     </div>
-    <!-- Footer with developer information -->
-  <footer>
-    <p>Developed by M.</p>
-    <p class="disclaimer">
-      DISCLAIMER: The following questions are sourced from the question bank and are provided for your reference.
-      Please note that this website holds no official affiliation with the university, and I cannot guarantee the
-      absolute accuracy of the content. Wishing you the very best in your academic journey! 😊 TELEGRAM:@kindintent
-    </p>
-    </footer>
+ <!-- Google Fonts: Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
+<footer class="custom-footer">
+  <p class="dev-credit">Developed by <strong>M.</strong></p>
+  <p class="disclaimer">
+    DISCLAIMER: These questions are sourced from the question bank for reference purposes only.<br>
+    This website is not officially affiliated with the university, and accuracy cannot be guaranteed.<br>
+    Wishing you the best on your academic journey! 😊<br>
+    <span class="telegram">Telegram: <a href="https://t.me/kindintent" target="_blank">@kindintent</a></span>
+  </p>
+</footer>
     <script>
         // Quiz data
         const questions = [
